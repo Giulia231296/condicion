@@ -4,6 +4,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     if (La_alarma_esta_activada && La_puerta_está_abierta) {
+        basic.showString("Sonará la alarma")
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.No)
@@ -11,7 +12,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     La_puerta_está_abierta = true
-    basic.showString("La puerta esta abierta")
+    basic.showString("La puerta está abierta")
 })
 let La_alarma_esta_activada = false
 let La_puerta_está_abierta = false
